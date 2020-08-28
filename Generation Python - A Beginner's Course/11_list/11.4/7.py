@@ -13,11 +13,11 @@ request = []
 for _ in range(int(input())):
     key = input()
     request.append(key)
-rez = []
+
 for item in data:
     flag = True
     for key in request:
-        if not (key.lower() in item.lower()):
+        if key.lower() not in item.lower():
             flag = False
     if flag:
         print(item)
