@@ -1,2 +1,6 @@
-fib = lambda x : 1 if x <= 2 else fib(x - 1) + fib(x - 2)
-fib(31)
+n = int(input())
+score = 0
+for i in range(n):
+    num = int(input())
+    score += num
+print(score)
